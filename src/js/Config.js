@@ -1,4 +1,4 @@
-export const API_URL = "https://localhost:7038/api/";
+export const API_URL = "https://portfolio-backend-21vc.onrender.com/api/";
 
 export const ENDPOINTS = {
   Projects: "Projects",
