@@ -1,3 +1,5 @@
+import { Icon } from "../../Components/Icon.js";
+
 export function ContactPageHTML() {
   return `
     <div class="max-w-[1200px] mx-auto px-margin-mobile sm:px-margin py-space-xl">
@@ -19,14 +21,14 @@ export function ContactPageHTML() {
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-space-md">
             <a class="group flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/30 hover:border-primary/60 transition-colors" href="mailto:mjaradat702@gmail.com">
-              <span class="material-symbols-outlined text-primary">mail</span>
+              ${Icon("mail", "text-primary")}
               <span class="flex flex-col gap-space-xs">
                 <span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Email</span>
                 <span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">mjaradat702@gmail.com</span>
               </span>
             </a>
             <a class="group flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container border border-outline-variant/30 hover:border-primary/60 transition-colors" href="https://www.linkedin.com/in/moe-q-jaradat" target="_blank" rel="noreferrer">
-              <span class="material-symbols-outlined text-primary">work</span>
+              ${Icon("work", "text-primary")}
               <span class="flex flex-col gap-space-xs">
                 <span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">LinkedIn</span>
                 <span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">Connect professionally</span>
@@ -35,7 +37,7 @@ export function ContactPageHTML() {
           </div>
 
           <div class="flex items-center gap-space-sm pt-space-sm text-on-surface-variant">
-            <span class="material-symbols-outlined text-tertiary">schedule</span>
+            ${Icon("schedule", "text-tertiary")}
             <span class="font-body-sm text-body-sm">Usually responds within 1-2 business days.</span>
           </div>
         </div>
@@ -68,7 +70,7 @@ export function ContactPageHTML() {
           </label>
 
           <button class="w-full inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md transition-all active:scale-[0.98]" type="submit">
-            <span class="material-symbols-outlined text-[18px]">send</span>
+            ${Icon("send", "text-[18px]")}
             Send message
           </button>
           <p aria-live="polite" class="hidden font-body-sm text-body-sm text-tertiary" id="contactFormStatus"></p>

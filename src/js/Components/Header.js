@@ -1,3 +1,5 @@
+import { Icon } from "./Icon.js";
+
 export function Header() {
   return ` <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
   <div class="h-16 max-w-[1200px] mx-auto px-margin-mobile sm:px-margin flex items-center justify-between">
@@ -56,9 +58,7 @@ export function Header() {
         Hire Me / Get in Touch
       </a>
       <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-        <span class="material-symbols-outlined text-on-primary text-[18px]">
-          person
-        </span>
+        <span class="text-on-primary text-[18px]">${Icon("work")}</span>
       </div>
     </div>
   </div>

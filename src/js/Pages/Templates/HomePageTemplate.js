@@ -1,3 +1,5 @@
+import { Icon } from "../../Components/Icon.js";
+
 export function HomePageHTML() {
   return `
   <!-- Hero Section -->
@@ -13,19 +15,19 @@ export function HomePageHTML() {
       </p>
       <div class="flex flex-wrap items-center justify-center md:justify-start gap-space-sm md:gap-space-md pt-space-sm">
         <a class="flex items-center gap-2 bg-surface-container-high border border-outline-variant/50 px-4 py-2 rounded-xl hover:border-primary-container transition-colors duration-200 glow-hover text-on-surface" href="https://github.com/Moe-jar">
-          <span class="material-symbols-outlined" data-icon="code">code</span>
+          ${Icon("code")}
           <span class="font-label-md text-label-md">GitHub</span>
         </a>
         <a class="flex items-center gap-2 bg-surface-container-high border border-outline-variant/50 px-4 py-2 rounded-xl hover:border-primary-container transition-colors duration-200 glow-hover text-on-surface" href="https://www.linkedin.com/in/moe-q-jaradat">
-          <span class="material-symbols-outlined" data-icon="work">work</span>
+          ${Icon("work")}
           <span class="font-label-md text-label-md">LinkedIn</span>
         </a>
-        <a class="flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-2 rounded-xl hover:opacity-90 transition-opacity duration-200" href="./assets/cv.pdf">
-          <span class="material-symbols-outlined" data-icon="download">download</span>
+        <a class="flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-2 rounded-xl hover:opacity-90 transition-opacity duration-200" href="src/assets/cv.pdf">
+          ${Icon("download")}
           <span class="font-label-md text-label-md">Resume</span>
         </a>
         <a class="flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-2 rounded-xl hover:opacity-90 transition-opacity duration-200" href="#/projects">
-          <span class="material-symbols-outlined" data-icon="folder">folder</span>
+          ${Icon("folder")}
           <span class="font-label-md text-label-md">My Projects</span>
         </a>
       </div>
@@ -41,13 +43,13 @@ export function HomePageHTML() {
   <!-- Skills Section -->
   <section class="max-w-7xl mx-auto px-margin-mobile sm:px-gutter py-space-xl" id="about">
     <h3 class="font-headline-md text-headline-md text-primary mb-space-lg flex items-center gap-2">
-      <span class="material-symbols-outlined" data-icon="terminal">terminal</span> Technical Arsenal
+      ${Icon("terminal")} Technical Arsenal
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
       <!-- Backend -->
       <div class="bg-surface-container rounded-2xl md:rounded-full p-space-md border border-outline-variant/30 glow-hover transition-all duration-300">
         <div class="flex items-center gap-2 mb-space-sm text-primary-container">
-          <span class="material-symbols-outlined" data-icon="database">database</span>
+          ${Icon("database")}
           <h4 class="font-label-sm text-label-sm uppercase tracking-widest">Backend Systems</h4>
         </div>
         <div class="flex flex-wrap gap-2 mt-space-sm">
@@ -59,7 +61,7 @@ export function HomePageHTML() {
       <!-- Frontend -->
       <div class="bg-surface-container rounded-2xl md:rounded-full p-space-md border border-outline-variant/30 glow-hover transition-all duration-300">
         <div class="flex items-center gap-2 mb-space-sm text-secondary">
-          <span class="material-symbols-outlined" data-icon="web">web</span>
+          ${Icon("web")}
           <h4 class="font-label-sm text-label-sm uppercase tracking-widest">Frontend Development</h4>
         </div>
         <div class="flex flex-wrap gap-2 mt-space-sm">
@@ -73,7 +75,7 @@ export function HomePageHTML() {
       <!-- Infrastructure -->
       <div class="bg-surface-container rounded-2xl md:rounded-full p-space-md border border-outline-variant/30 glow-hover transition-all duration-300">
         <div class="flex items-center gap-2 mb-space-sm text-tertiary">
-          <span class="material-symbols-outlined" data-icon="cloud">cloud</span>
+          ${Icon("cloud")}
           <h4 class="font-label-sm text-label-sm uppercase tracking-widest">Infrastructure</h4>
         </div>
         <div class="flex flex-wrap gap-2 mt-space-sm">
@@ -87,7 +89,7 @@ export function HomePageHTML() {
   <!-- Featured Projects -->
   <section class="max-w-7xl mx-auto px-margin-mobile sm:px-gutter py-space-xl" id="projects">
     <h3 class="font-headline-md text-headline-md text-primary mb-space-lg flex items-center gap-2">
-      <span class="material-symbols-outlined" data-icon="folder_special">folder_special</span> Featured Projects
+      ${Icon("folder_special")} Featured Projects
     </h3>
     <div class="flex flex-col gap-space-lg">
       <!-- Project Card 1 -->
@@ -139,7 +141,7 @@ export function HomePageHTML() {
       </p>
       <div class="flex justify-center relative z-10">
         <a class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-label-md text-label-md hover:scale-105 transition-transform duration-200 shadow-lg shadow-primary-container/20" href="#/contact">
-          <span class="material-symbols-outlined" data-icon="send">send</span>
+          ${Icon("send")}
           Start the Conversation
         </a>
       </div>

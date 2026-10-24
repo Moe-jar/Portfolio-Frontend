@@ -1,3 +1,5 @@
+import { Icon } from "./Icon.js";
+
 export function ProjectCard(project) {
   if (!project) {
     return ``;
@@ -74,7 +76,7 @@ export function ProjectCard(project) {
                 class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
                 href="#${project.repositoryUrl}"
               >
-                <span class="material-symbols-outlined text-[16px]">code</span>
+                ${Icon("code", "text-[16px]")}
                 <span>Source Code</span>
               </a>
               <a
@@ -83,9 +85,7 @@ export function ProjectCard(project) {
                 href="#${project.liveDemoUrl}"
               >
                 <span>Live System</span>
-                <span class="material-symbols-outlined text-[14px]"
-                  >open_in_new</span
-                >
+                ${Icon("share", "text-[14px]")}
               </a>
             </div>
           </article>`;

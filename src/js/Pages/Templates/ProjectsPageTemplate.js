@@ -1,3 +1,5 @@
+import { Icon } from "../../Components/Icon.js";
+
 export function ProjectPageHTML() {
   return `<div style= "color : white; " class="max-w-[1200px] mx-auto px-margin py-space-xl"  >
     <div class="flex flex-col w-full">
@@ -39,10 +41,7 @@ export function ProjectPageHTML() {
         <div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
           <!-- Search Input -->
           <div class="md:col-span-5 relative">
-            <span
-              class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none"
-              >search</span
-            >
+            ${Icon("search", "absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none")}
             <input
               class="w-full h-9 pl-9 pr-space-md bg-surface-container-lowest border border-outline-variant/40 rounded text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
               id="projectSearchInput"
@@ -66,10 +65,7 @@ export function ProjectPageHTML() {
               <option value="Redis">Redis</option>
               <option value="Docker">Docker</option>
             </select>
-            <span
-              class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none"
-              >expand_more</span
-            >
+            ${Icon("expand_more", "absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none")}
           </div>
           <!-- Sort Dropdown -->
           <div class="md:col-span-2 relative">
@@ -80,10 +76,7 @@ export function ProjectPageHTML() {
               <option value="newest">Newest First</option>
               <option value="alpha">Title A-Z</option>
             </select>
-            <span
-              class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none"
-              >swap_vert</span
-            >
+            ${Icon("swap_vert", "absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none")}
           </div>
           <!-- Reset CTA -->
           <div class="md:col-span-2 flex justify-end">
@@ -92,7 +85,7 @@ export function ProjectPageHTML() {
               id="resetFiltersBtn"
               type="button"
             >
-              <span class="material-symbols-outlined text-[16px]">refresh</span>
+              ${Icon("refresh", "text-[16px]")}
               Reset
             </button>
           </div>
@@ -407,9 +400,7 @@ export function ProjectPageHTML() {
           <div
             class="w-14 h-14 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-space-md text-primary"
           >
-            <span class="material-symbols-outlined text-[28px]"
-              >search_off</span
-            >
+            ${Icon("search_off", "text-[28px]")}
           </div>
           <h3
             class="font-headline-md text-headline-md text-on-surface mb-space-xs"
@@ -427,9 +418,7 @@ export function ProjectPageHTML() {
             id="emptyResetAction"
             type="button"
           >
-            <span class="material-symbols-outlined text-[16px]"
-              >restart_alt</span
-            >
+            ${Icon("restart_alt", "text-[16px]")}
             Reset All Filters
           </button>
         </div>
@@ -442,7 +431,7 @@ export function ProjectPageHTML() {
           <div
             class="w-14 h-14 rounded-full bg-error-container/30 border border-error/40 flex items-center justify-center mb-space-md text-error"
           >
-            <span class="material-symbols-outlined text-[28px]">cloud_off</span>
+            ${Icon("cloud_off", "text-[28px]")}
           </div>
           <h3
             class="font-headline-md text-headline-md text-on-surface mb-space-xs"
@@ -463,7 +452,7 @@ export function ProjectPageHTML() {
               id="retryConnectionBtn"
               type="button"
             >
-              <span class="material-symbols-outlined text-[16px]">sync</span>
+              ${Icon("sync", "text-[16px]")}
               Retry Connection
             </button>
             <button

@@ -1,5 +1,7 @@
+import { replaceMaterialIcons } from "../../Components/Icon.js";
+
 export function ProjectDetailsPageHTML(project) {
-  return ` <div
+  return replaceMaterialIcons(` <div
         class="flex flex-col w-full px-4 sm:px-8 max-w-7xl mx-auto py-8 space-y-8"
       >
         <!-- Top Navigation & Metadata Strip -->
@@ -596,5 +598,5 @@ export function ProjectDetailsPageHTML(project) {
         </div>
       </div>
 
-    `;
+    `);
 }
