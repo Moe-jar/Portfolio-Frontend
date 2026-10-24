@@ -32,7 +32,7 @@ export function HomePageHTML() {
     </div>
     <div class="w-full min-w-0 flex-1 flex justify-center md:justify-end relative group">
       <div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-surface-container-high relative z-10 transition-transform duration-500 group-hover:scale-105">
-        <img alt="Mohammed Jaradat Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://res.cloudinary.com/zkyjhwrd/image/upload/v1791749111/7f3eac70-cc9a-44d4-a34e-14504104cd71.png"/>
+        <img alt="Mohammed Jaradat Portrait" fetchpriority="high" decoding="async" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://res.cloudinary.com/zkyjhwrd/image/upload/f_auto,q_auto,w_768/v1791749111/7f3eac70-cc9a-44d4-a34e-14504104cd71.png"/>
       </div>
       <div class="absolute inset-0 bg-primary-container/20 blur-3xl rounded-full scale-110 -z-0 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
     </div>
@@ -93,7 +93,7 @@ export function HomePageHTML() {
       <!-- Project Card 1 -->
       <div class="group relative overflow-hidden rounded-2xl md:rounded-full bg-surface-container border border-outline-variant/30 glow-hover transition-all duration-300 flex flex-col md:flex-row h-auto md:h-80">
         <div class="md:w-1/2 h-48 md:h-full overflow-hidden">
-          <img alt="Data Visualization Dashboard" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8BoYnkMIxZSdK0u-45SRQYpOHk_b77TaY_Kh_48leMl-SDVZDJz4viD02jSvt3F9jDpP4wHOmff0HNpwWg3TJSpHJg48H11e_KzVpEpk1fpo1iTV4MGdSUunbEHWTw6q0HdjFCrZZVsy6CoqkWS1zMwJlEjCCWZG90Sx3OFYIJBSxtzD6IIKg7Sytu1NxJJEXL6XLQNXojcJuPTMQqClTJJMVOvgCV6GzZMLM6XdNeIwVfY_HRhTkezNdQy6tdswFcDirYmw2JA"/>
+          <img alt="Data Visualization Dashboard" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8BoYnkMIxZSdK0u-45SRQYpOHk_b77TaY_Kh_48leMl-SDVZDJz4viD02jSvt3F9jDpP4wHOmff0HNpwWg3TJSpHJg48H11e_KzVpEpk1fpo1iTV4MGdSUunbEHWTw6q0HdjFCrZZVsy6CoqkWS1zMwJlEjCCWZG90Sx3OFYIJBSxtzD6IIKg7Sytu1NxJJEXL6XLQNXojcJuPTMQqClTJJMVOvgCV6GzZMLM6XdNeIwVfY_HRhTkezNdQy6tdswFcDirYmw2JA"/>
         </div>
         <div class="md:w-1/2 p-space-lg flex flex-col justify-center">
           <h4 class="font-headline-lg text-headline-lg text-on-surface mb-space-sm group-hover:text-primary-container transition-colors">Nexus Analytics</h4>
@@ -110,7 +110,7 @@ export function HomePageHTML() {
       <!-- Project Card 2 -->
       <div class="group relative overflow-hidden rounded-2xl md:rounded-full bg-surface-container border border-outline-variant/30 glow-hover transition-all duration-300 flex flex-col md:flex-row-reverse h-auto md:h-80">
         <div class="md:w-1/2 h-48 md:h-full overflow-hidden">
-          <img alt="Code Editor Interface" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP2NV_PbRFDMqqH30SJ0trzG2VKVhzegk8q-mjRmgK358nw0gLQkz28YUToxaMNfcMBJOIeq3GUiIZxstyUONwH5Xfdf4xFWF9KE-vk97eqLJta99MrQfr42iyL8-jWoBQfRkSg3RLrbFAUPTt3sMYpFHt33G8__z9pPXgusSYwA-QGyPFWYURBfAI9UBfVnle56TChnx0BMMipeq7r1Uv-s9rper5xHP5edMiMdxnGxRvmML2iyGT2PoaGx7JbKf4ZfXn3_MO-A"/>
+          <img alt="Code Editor Interface" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP2NV_PbRFDMqqH30SJ0trzG2VKVhzegk8q-mjRmgK358nw0gLQkz28YUToxaMNfcMBJOIeq3GUiIZxstyUONwH5Xfdf4xFWF9KE-vk97eqLJta99MrQfr42iyL8-jWoBQfRkSg3RLrbFAUPTt3sMYpFHt33G8__z9pPXgusSYwA-QGyPFWYURBfAI9UBfVnle56TChnx0BMMipeq7r1Uv-s9rper5xHP5edMiMdxnGxRvmML2iyGT2PoaGx7JbKf4ZfXn3_MO-A"/>
         </div>
         <div class="md:w-1/2 p-space-lg flex flex-col justify-center">
           <h4 class="font-headline-lg text-headline-lg text-on-surface mb-space-sm group-hover:text-primary-container transition-colors">Aether Gateway</h4>

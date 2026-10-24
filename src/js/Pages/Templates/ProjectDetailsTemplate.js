@@ -328,6 +328,8 @@ export function ProjectDetailsPageHTML(project) {
                 class="relative rounded-lg overflow-hidden border border-surface-variant group bg-surface-container-lowest"
               >
                 <img
+                  loading="lazy"
+                  decoding="async"
                   class="w-full h-80 object-cover object-center transition-all duration-300 group-hover:scale-[1.01]"
                   data-alt="HyperScale Cluster Architecture Blueprint and Topology Visualizer View"
                   id="featured-gallery-img"

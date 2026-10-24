@@ -5,8 +5,12 @@ import { projectDetailsPage } from "./ProjectDetailsPage.js";
 
 export async function projectsPage(mainContainer) {
   mainContainer.innerHTML = ProjectPageHTML();
-  const projects = await tryFetchProjects();
+  const loadingState = mainContainer.querySelector("#loadingState");
+  const populatedState = mainContainer.querySelector("#populatedState");
+  loadingState.classList.remove("hidden");
+  populatedState.classList.add("hidden");
 
+  const projects = await tryFetchProjects();
   if (!projects) {
     renderError(mainContainer);
     return;
@@ -200,5 +204,10 @@ function setupProjectPage(container, projects) {
 }
 
 function renderError(container) {
-  container.innerHTML = ProjectPageHTML("Failed to load projects.");
+  container.querySelector("#loadingState").classList.add("hidden");
+  container.querySelector("#populatedState").classList.add("hidden");
+  container.querySelector("#errorState").classList.remove("hidden");
+  container.querySelector("#retryConnectionBtn").addEventListener("click", () => {
+    projectsPage(container);
+  });
 }
