@@ -29,6 +29,7 @@ async function tryFetchProjects() {
 }
 
 function setupProjectPage(container, projects) {
+  container.querySelector("#loadingState").classList.add("hidden");
   const projectsGrid = container.querySelector("#projectsGridContainer");
   const searchInput = container.querySelector("#projectSearchInput");
   const techFilterSelect = container.querySelector("#techFilterSelect");
@@ -179,6 +180,8 @@ function setupProjectPage(container, projects) {
   }
 
   function renderProjects(projectsToRender) {
+    container.querySelector("#loadingState").classList.add("hidden");
+
     if (projectsToRender.length === 0) {
       projectsGrid.innerHTML = "";
       projectCounterDisplay.textContent = "0 Projects";
